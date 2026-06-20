@@ -39,7 +39,23 @@ or using uv：
 uv sync
 ```
 
-#### 4. Configuration environment variables
+#### 4. Install FFmpeg (Required for Music Playback)
+FFmpeg is a system dependency required to process audio streams. Install it via your OS package manager:
+
+- **Windows (PowerShell)**:
+  ```powershell
+  winget install Gyan.FFmpeg
+  ```
+- **macOS (Homebrew)**:
+  ```bash
+  brew install ffmpeg
+  ```
+- **Linux (Ubuntu/Debian)**:
+  ```bash
+  sudo apt update && sudo apt install ffmpeg
+  ```
+
+#### 5. Configuration environment variables
 Edit `.env` file, enter the necessary API key and settings: 
 
 ```env
@@ -53,7 +69,7 @@ COMMAND_PREFIX = "%"                         # Discord commend prefix
 LOGGING = "True"                             # Enable logging
 ```
 
-#### 5. Setup YouTube Cookies (Recommended for Music Playback)
+#### 6. Setup YouTube Cookies (Recommended for Music Playback)
 To prevent YouTube from blocking the music streaming, it is highly recommended to provide a cookie file:
 
 Export your YouTube cookies using a browser extension (e.g., [Get cookies.txt LOCALLY](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc?pli=1)).
