@@ -233,7 +233,7 @@ class Music(CogBase):
             'remote_components': ['ejs:github'],
             'extractor_args': {'youtube': ['player_client=android,ios,web']},
             # 'cookiesfrombrowser': ('chrome',),
-            'cookiefile': 'yt_cookies.txt',
+            'cookiefile': './data/yt_cookies.txt',
         }
         self.FFMPEG_OPTIONS = {
             'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5',
